@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y software-properties-common && \
     apt-get update && \
     apt-get install -y bitcoind
     
-RUN bitcoind getinfo
+RUN bitcoind --help
 
 VOLUME ["/opt/bitcoin"]
 
